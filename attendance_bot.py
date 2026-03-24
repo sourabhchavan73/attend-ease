@@ -39,7 +39,7 @@ class AttendanceBot:
                 action_button = page.get_by_role(selectors.button, name=action_name)
                 expect(action_button).to_be_visible(timeout=180000)
 
-                # action_button.click()
+                action_button.click()
                 message = (f"Hi,"
                            f"\n"
                            f"{action_name} successful for - {datetime.now().strftime('%d %b %Y')}")
