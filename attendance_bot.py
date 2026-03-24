@@ -24,7 +24,7 @@ class AttendanceBot:
             with sync_playwright() as p:
                 print("Launching browser...")
 
-                browser = p.chromium.launch(headless=False)
+                browser = p.chromium.launch(headless=True)
                 page = browser.new_page()
 
                 print("Opening page...")
