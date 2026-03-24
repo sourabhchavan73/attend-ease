@@ -9,7 +9,6 @@ import constants
 import requests
 
 load_dotenv ()
-
 GREYTHR_ID = os.getenv('GREYTHR_ID')
 GREYTHR_PASSWORD = os.getenv('GREYTHR_PASSWORD')
 EMAIL = os.getenv('EMAIL')
