@@ -2,7 +2,7 @@ name: Daily Attendance Bot
 
 on:
   schedule:
-    - cron: "30 3,15 * * *"
+    - cron: "*/5 * * * *"
 jobs:
   run:
     runs-on: ubuntu-latest
