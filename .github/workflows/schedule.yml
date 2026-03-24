@@ -2,13 +2,7 @@ name: Daily Attendance Bot
 
 on:
   schedule:
-    - cron: '*/2 * * * *'
-  push:
-    branches:
-      - feature/*
-
-  workflow_dispatch:
-
+    - cron: "*/5 * * * *"
 jobs:
   run:
     runs-on: ubuntu-latest
