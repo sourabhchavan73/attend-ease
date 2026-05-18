@@ -27,6 +27,7 @@ content = pd.DataFrame(data["sheet1"])
 notifier = Notification(email=EMAIL, password=PASSWORD, org_cc=ORG_CC, manager_email=MANAGER_EMAIL)
 workday_checker = WorkdayChecker(content)
 attendance_bot = AttendanceBot(greythr_id=GREYTHR_ID, greythr_password=GREYTHR_PASSWORD, page=Page, notifier=notifier, greythr_URL=GREYTHR_URL)
+
 today_info = workday_checker.has_leave_today()
 
 if not is_weekend():
