@@ -13,7 +13,6 @@ class WorkdayChecker:
         year = today.year
         month = today.month
         day = today.day
-
         for index, row in self.holidays.iterrows():
             if row['year'] == year and row['month'] == month and row['day'] == day:
                 return row
